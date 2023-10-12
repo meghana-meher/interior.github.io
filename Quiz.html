@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Architect Website</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="text/css"
+    href="https://static.vecteezy.com/system/resources/previews/008/124/777/original/real-estate-logo-house-logo-home-logo-sign-symbol-free-vector.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Josefin+Slab:ital,wght@0,400;0,600;1,300;1,400;1,600&family=Muli:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <div class="spinner-container">
+    <div class="circles">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="hamburger-menu">
+      <div class="line line-1"></div>
+      <div class="line line-2"></div>
+      <div class="line line-3"></div>
+      <span>Close</span>
+    </div>
+    <header class="header">
+      <div class="img-wrapper">
+        <img src="https://cplusdesign.lk/wp-content/uploads/2021/09/Modern-House-Interior-Designs-in-Sri-Lanka-3.jpg" />
+      </div>
+      <div class="banner">
+        <h1>Architecture & Interior Design</h1>
+        <p>Let us help you construct your dream interior home.</p>
+        <button>Discover now</button>
+      </div>
+    </header>
+
+
+    <section class="sidebar">
+      <ul class="menu">
+        <li class="menu-item">
+          <a href="Interior.html" class="menu-link" data-content="Home">Home</a>
+        </li>
+        <li class="menu-item">
+          <a href="About.html" class="menu-link" data-content="About">About</a>
+        </li>
+        <li class="menu-item">
+          <a href="Team.html" class="menu-link" data-content="Team">Team</a>
+        </li>
+        <li class="menu-item">
+          <a href="Quiz.html" class="menu-link" data-content="Quiz">Quiz</a>
+        </li>
+        <!--           <li class="menu-item">
+            <a href="#" class="menu-link" data-content="Pricing">Pricing</a>
+          </li> -->
+        <li class="menu-item">
+          <a href="Contact.html" class="menu-link" data-content="Contact Us">Contact Us</a>
+        </li>
+      </ul>
+      <div class="social-media">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </section>
+
+    <!-- =========== QUIZ =============== -->
+    <h6 class="qu">QUIZ</h6>
+    <div id="quiz-container">
+      <!-- question container -->
+      <div class="questions">
+        <h2 id="question"></h2>
+        <ol type="A">
+          <li class="option"><span id="option0" onclick="calcScore(this)"></span></li>
+          <li class="option"><span id="option1" onclick="calcScore(this)"></span></li>
+          <li class="option"><span id="option2" onclick="calcScore(this)"></span></li>
+          <li class="option"><span id="option3" onclick="calcScore(this)"></span></li>
+        </ol>
+        <h4 id="stat"></h4>
+      </div>
+
+      <div class="buttons">
+        <button type="button"><a href="Interior.html">Home</a></button>
+        <button type="button" class="next">Next</button>
+
+
+      </div>
+
+    </div>
+    < <!-- scoreboard section -->
+      <div id="scoreboard">
+        <h2 id="score-title">Your Score</h2>
+        <h2 id="score"></h2>
+        <button type="button"><a href="Interior.html">Home</a></button>
+        <button type="button" id="score-btn" onclick="backToQuiz()">Back to Quiz</button>
+        <button type="button" id="check-answer" onclick="checkAnswer()">Check Answers</button>
+
+      </div>
+
+      <!-- answers section -->
+      <div id="answerBank">
+        <h2>Answers :</h2>
+        <ol type="1" id="answers">
+
+        </ol>
+
+        <button type="button" id="score-btn" onclick="backToQuiz()">Back to Quiz</button>
+
+      </div>
+
+      <!-- ====== answers section===== -->
+      <div id="answer">
+        <div id="container">
+          <h1>Minimalist</h1>
+          <img
+            src="https://static.asianpaints.com/content/dam/asianpaintsbeautifulhomes/home-decor-advice/design-and-style/15-indian-interior-design-ideas-to-add-that-desi-drama-to-your-home/Title-indian-interior-design-ideas-for-your-home.jpg">
+          <h2>Your interior design style is Minimalist!</h2>
+          <p>You understand that scarcity is the truest form of style and elegance. You curate your space only with the
+            bare essentials. Every aspect of your style is toned down and monochromatic, leaving room for color to pop
+            when you want it to. Your style is clean and functional but warm and inviting, like these linen and leather
+            throw pillows and these glass flower vases.</p>
+          <!-- <button>Retake Quiz</button> -->
+        </div>
+      </div>
+      <!-- <div class="btnca"><button onclick="check_ans()">Check Answers</button></div> -->
+
+      <footer class="footer">
+        <div class="footer-content">
+          <p class="copyright">
+            Copyright &copy; 2023, MEGHANA MEHER - All Rights Reserved
+          </p>
+          <div class="social-list">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </footer>
+      <a href="#" class="scroll-btn">
+        <i class="fas fa-arrow-up"></i>
+      </a>
+  </div>
+  <script src="quiz.js"></script>
+  <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
